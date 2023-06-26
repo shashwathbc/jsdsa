@@ -32,3 +32,4 @@ function sumDivisibleBy357(n) {
 console.log(sumDivisibleBy357(7));  // Output: 21
 console.log(sumDivisibleBy357(10)); // Output: 40
 console.log(sumDivisibleBy357(9));  // Output: 30
+// done
