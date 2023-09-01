@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="minAndMax.js">
+<body>
+    <script>
+      const minAndMaxOfAnArray = (no) => {
+   console.log(no);
+    let n = no.length;
+    let arr = no;
+
+    //initialize min and max
+    let min = arr[0];
+    let max = 0;
+
+    for(let i=0;i<n;i++){
+        if(arr[i] > max){
+            max = arr[i];
+        }
+    }
+
+    for(let i=0;i<n;i++){
+        if(arr[i] < min){
+            min = arr[i];
+        }
+    }
+   return {min , max};
+}
+
+const output = minAndMaxOfAnArray([3, 2, 1, 56, 10000, 167]);
+console.log(output);
+    </script>
+</body>
+</html>
